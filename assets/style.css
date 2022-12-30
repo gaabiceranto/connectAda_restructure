@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #181C23;
+    display: block;
+    font-family: 'Exo', sans-serif;
+
+
+}
+
+header {
+    position: fixed;
+    flex-direction: row;
+    display: flex;
+    background: rgba(24,28,35,0.7);
+    backdrop-filter: blur(6px);
+    z-index: 10;
+    border: 0;
+    border-bottom: 1px solid #A6F750;
+    width: 100vw;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    gap: 67px;
+    padding: 20px;
+}
+
+header .avatarIcon img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #A6F750;
+}
+
+.logoAdaHorizontal img {
+    width: 129.4px;
+    height: 28.77px;
+}
+
+.addFriendsIcon img {
+    width: 26px;
+    height: 26px;
+
+}
+
+main {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    margin-right: -100%;
+    border-bottom: 1px solid #fff;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #282C33;
+    padding: 10px 20px;
+
+}
+
+li .avatarIcon {
+    padding: 0 10px 0 0;
+
+}
+
+/* Vamos Ter que alterar para cada postagem */
+li .avatarIcon img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #A6F750;
+}
+
+.userNameAndPostContainer div {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between
+}
+
+.userNameAndPostContainer strong,
+p {
+    color: white;
+    font-size: 12px;
+}
+
+.userNameAndPostContainer span {
+    color: #CED5DC;
+    font-size: 12px;
+    opacity: 40%;
+    font-weight: 400;
+}
+
+.userNameAndHour {
+    gap: 3px;
+}
+
+.btnEditAndDeletPost img {
+    width: 16px;
+    height: 3.2px;
+}
+
+.btnEditAndDeletPost button {
+    border: none;
+    background: none;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 375px;
+    height: 47px;
+    background-color: #282C33;
+}
+
+
+footer img{
+    width: 20.52px;
+    height: 20.52px;
+
+}
+
+footer button{
+    border: 6px solid #181C23;
+    background: #A6F750;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -33px;
+
+}
