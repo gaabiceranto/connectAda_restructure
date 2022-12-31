@@ -1,1 +1,61 @@
-registrar Ada
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar na Connect Ada</title>
+
+
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer type="module" src="register.method.js"></script>
+
+</head>
+<body>
+  <div id="page">
+    <header>
+      <img src="/assets/logo-ada+connect.svg" alt="logo conect ada em verde limao">
+      <p>A rede social ada by let's code.</p>
+    </header>
+  
+    <main>
+      <form>
+        <h2>Entrar na Connect Ada</h2>
+            <div>
+                <i class="fa-solid fa-user RadiusBorderUp"></i>
+                <input type="text" placeholder="Nome" id="firstName" class="inputName">
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Sobrenome" id="lastName" class="noRadiusBorder">
+            </div>
+            <div>
+                <i><img src="/assets/icon-arroba.svg" alt=""></i>
+                <input name="userName" type="text" placeholder="Nome de Usuário" id="userName" class="noRadiusBorder" onkeypress="return event.charCode != 32">
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="E-mail" id="email" class="noRadiusBorder">
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Senha" id="password" class="noRadiusBorder">
+            </div>
+            <div>
+                <i class="fa-solid fa-key RadiusBorderDown"></i>
+                <input type="password" placeholder="Confirme a Senha" id="confirmPassword" class="inputPassword">
+            </div>
+          <button type="submit" id="buttonRegister" >Cadastrar</button>
+          <!-- mudar para event depois -->
+          <p>Já tem uma conta? <a href="login.method.js" >Entrar</a></p>
+      </form>
+    </main>
+  
+  </div>
+</body>
+</html>
