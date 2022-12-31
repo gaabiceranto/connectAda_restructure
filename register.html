@@ -24,38 +24,78 @@
   
     <main>
       <form>
-        <h2>Entrar na Connect Ada</h2>
+        <h2>Cadastrar na Connect Ada</h2>
             <div>
                 <i class="fa-solid fa-user RadiusBorderUp"></i>
-                <input type="text" placeholder="Nome" id="firstName" class="inputName">
+                <input type="text" placeholder="Nome" id="firstName" class="inputName" required>
             </div>
             <div>
                 <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Sobrenome" id="lastName" class="noRadiusBorder">
+                <input type="text" placeholder="Sobrenome" id="lastName" class="noRadiusBorder" required>
             </div>
             <div>
                 <i><img src="/assets/icon-arroba.svg" alt=""></i>
-                <input name="userName" type="text" placeholder="Nome de Usuário" id="userName" class="noRadiusBorder" onkeypress="return event.charCode != 32">
+                <input  type="text" placeholder="Nome de Usuário" id="userName" class="noRadiusBorder" onkeypress="return event.charCode != 32" required>
             </div>
             <div>
                 <i class="fa-solid fa-envelope"></i>
-                <input type="text" placeholder="E-mail" id="email" class="noRadiusBorder">
+                <input type="text" placeholder="E-mail" id="email" class="noRadiusBorder" required>
             </div>
             
             <div>
                 <i class="fa-solid fa-key"></i>
-                <input type="password" placeholder="Senha" id="password" class="noRadiusBorder">
+                <input type="password" placeholder="Senha" id="password" class="noRadiusBorder"  required>
+                <i class="fa-solid fa-eye-slash" id="iconPassword" onclick="close()"></i>
             </div>
             <div>
                 <i class="fa-solid fa-key RadiusBorderDown"></i>
-                <input type="password" placeholder="Confirme a Senha" id="confirmPassword" class="inputPassword">
+                <input type="password" placeholder="Confirme a Senha" id="confirmPassword" class="inputPassword"  required>
+                <i class="fa-solid fa-eye-slash fa-solid-border" id="iconConfirmPassword" onclick="close()"></i>
             </div>
           <button type="submit" id="buttonRegister" >Cadastrar</button>
           <!-- mudar para event depois -->
-          <p>Já tem uma conta? <a href="login.method.js" >Entrar</a></p>
+          <p>Já tem uma conta? <a href="login.html" >Entrar</a></p>
       </form>
     </main>
   
   </div>
+
+  <script>
+    let btn = document.querySelectorAll('#iconEye')
+    
+    btn.addEventListener('click', () => {
+      // const iconEye = document.querySelector('#iconEye')
+
+      // // iconEye.classList.add('fa-eye')
+      const inputSenha = document.querySelector('#password')
+
+      if (inputSenha.getAttribute('type') == 'password')
+        inputSenha.setAttribute('type', 'text')
+        else
+        inputSenha.setAttribute('type', 'password')
+
+
+      // for ( btn = 0; btn < btn.length; btn++) {
+      //   if (inputSenha.getAttribute('type') == 'password'){
+        
+      //   btn[i].setAttribute('class', 'fa-solid fa-eye')
+      //   } else{
+      //   btn[i].setAttribute('class', 'fa-solid fa-eye-slash')
+      //   }
+      // }
+
+
+      // if (inputSenha.getAttribute('type') == 'password'){
+        
+      // inputSenha.setAttribute('type', 'text')
+      // btn[i].setAttribute('class', 'fa-solid fa-eye')
+      // } else{
+      // inputSenha.setAttribute('type', 'password')
+      // btn[i].setAttribute('class', 'fa-solid fa-eye-slash')
+      // }
+
+      
+    })
+  </script>
 </body>
 </html>

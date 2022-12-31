@@ -12,7 +12,7 @@ function register(event){
 
     event.preventDefault();
 
-    if(confirmPassword != password){
+    if(confirmPassword != password ){
         alert ("As senhas não são idênticas.")
     } else {
         // cria um novo objeto de usuário dentro
@@ -32,3 +32,47 @@ const buttonRegister = document.getElementById('buttonRegister')
 buttonRegister.addEventListener("click", function(event){
     register(event)
 });
+
+buttonRegister.addEventListener("click", function(event){
+    register(event)
+});
+
+
+
+// Ver e esconder os campoos de senha 
+let btnIconPassword = document.querySelector('#iconPassword')
+
+btnIconPassword.addEventListener('click', () => {
+
+  const inputPassword = document.querySelector('#password')
+
+  if (inputPassword.getAttribute('type') == 'password'){
+    inputPassword.setAttribute('type', 'text')
+    btnIconPassword.setAttribute('class', 'fa-solid fa-eye')
+  }
+
+    else{
+    inputPassword.setAttribute('type', 'password')
+    btnIconPassword.setAttribute('class', 'fa-solid fa-eye-slash')
+    }
+  
+})
+
+// Ver e esconder os campoos de senha 
+let btnIconConfirmPassword = document.querySelector('#iconConfirmPassword')
+
+btnIconConfirmPassword.addEventListener('click', () => {
+
+  const inputConfirmPassword = document.querySelector('#confirmPassword')
+
+  if (inputConfirmPassword.getAttribute('type') == 'password'){
+    inputConfirmPassword.setAttribute('type', 'text')
+    btnIconConfirmPassword.setAttribute('class', 'fa-solid fa-eye')
+  }
+
+    else{
+    inputConfirmPassword.setAttribute('type', 'password')
+    btnIconConfirmPassword.setAttribute('class', 'fa-solid fa-eye-slash')
+    }
+  
+})
