@@ -1,5 +1,7 @@
 import { User } from "./user.class.js";
 import { dataBase } from "./data.js";
+
+
 function register(event){
 
     const firstName = document.getElementById("firstName").value;
@@ -76,3 +78,77 @@ btnIconConfirmPassword.addEventListener('click', () => {
     }
   
 })
+
+ 
+    const spans = document.querySelectorAll('.span-required')
+    const divRequired = document.querySelectorAll('#divRequired')
+    const inputs = document.querySelectorAll('.required')
+    const emailRegex = /^[\w+.]+@\w+\.\w{2,}(?:\.\w{2})?$/;
+
+
+
+
+const setError =  index => {
+  spans[index].style.display = 'block'
+  divRequired[index].setAttribute('style', 'border: 1px solid red !important; ')
+}
+
+const removeError =  index => {
+  spans[index].style.display = 'none'
+  divRequired[index].setAttribute('style', 'border: 1px solid rgb(166 247 80 / 48%);!important; ')
+}
+
+// input FistName
+inputs[0].addEventListener('keyup', () => {
+  if(inputs[0].value.length <= 3)
+  setError(0);
+  else
+  removeError(0);
+})
+
+// input LastName
+inputs[1].addEventListener('keyup', () => {
+  if(inputs[1].value.length <= 3)
+  setError(1);
+  else
+  removeError(1);
+})
+
+// input UserName
+inputs[2].addEventListener('keyup', () => {
+  if(inputs[2].value.length <= 3)
+  setError(2);
+  else
+  removeError(2);
+})
+
+// input Email
+inputs[3].addEventListener('keyup', () => {
+  if (!emailRegex.test(inputs[3].value))
+  setError(3);
+  else 
+  removeError(3);
+})
+
+// input senha
+inputs[4].addEventListener('keyup', () => {
+  if(inputs[4].value.length <= 8)
+  setError(4);
+  else
+  removeError(4);
+  comparePassword();
+})
+
+// input Confirmar Senha
+inputs[5].addEventListener('keyup', () => {
+  comparePassword();
+})
+
+
+function comparePassword (){
+  if (inputs[4].value == inputs[5].value && inputs[5].value == inputs[4].value)
+  removeError(5)
+  else
+  setError(5)
+}
+

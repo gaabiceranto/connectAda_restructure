@@ -41,9 +41,20 @@
     gap: 5px;
   }
 
-  form div {
+  #divRequired {
     display: flex;
 
+  }
+
+  form .divInput{
+    display: flex;
+    flex-direction: column;
+  }
+  .divInput span{
+    color: rgb(255, 88, 88);
+    font-size: 11px;
+    text-align: start;
+    display: none;
   }
   
   form h2 {
@@ -65,6 +76,11 @@
     background-color: #282C33;
     border: none;
   
+  }
+
+  .spanRequired{
+    display: flex;
+
   }
 
   /* Tira o Focus quando o input é selecionado */

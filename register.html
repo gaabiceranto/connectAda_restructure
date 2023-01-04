@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script defer type="module" src="register.method.js"></script>
+  
 
 </head>
 <body>
@@ -25,32 +25,54 @@
     <main>
       <form>
         <h2>Cadastrar na Connect Ada</h2>
-            <div>
-                <i class="fa-solid fa-user RadiusBorderUp"></i>
-                <input type="text" placeholder="Nome" id="firstName" class="inputName" required>
+            <div class="divInput">
+              <div id="divRequired">
+                  <i class="fa-solid fa-user RadiusBorderUp"></i>
+                  <input type="text" placeholder="Nome" id="firstName" class="inputName required" >
+              </div> 
+              <span class="span-required">Deve conter mais que 3 caracteres.</span>
             </div>
-            <div>
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Sobrenome" id="lastName" class="noRadiusBorder" required>
+
+            <div class="divInput">
+              <div id="divRequired">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="Sobrenome" id="lastName" class="noRadiusBorder required" required>
+              </div>
+              <span class="span-required">Deve conter mais que 3 caracteres.</span>
             </div>
-            <div>
-                <i><img src="/assets/icon-arroba.svg" alt=""></i>
-                <input  type="text" placeholder="Nome de Usuário" id="userName" class="noRadiusBorder" onkeypress="return event.charCode != 32" required>
+
+            <div class="divInput">
+              <div id="divRequired" >
+                  <i><img src="/assets/icon-arroba.svg" alt=""></i>
+                  <input  type="text" placeholder="Nome de Usuário" id="userName" class="noRadiusBorder required" onkeypress="return event.charCode != 32" required>
+              </div>
+              <span class="span-required">Deve conter mais que 3 caracteres.</span>
             </div>
-            <div>
-                <i class="fa-solid fa-envelope"></i>
-                <input type="text" placeholder="E-mail" id="email" class="noRadiusBorder" required>
+
+            <div class="divInput">
+              <div id="divRequired">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="text" placeholder="E-mail" id="email" class="noRadiusBorder required" required>
+              </div>
+              <span class="span-required">Este não é um email válido.</span>
             </div>
             
-            <div>
-                <i class="fa-solid fa-key"></i>
-                <input type="password" placeholder="Senha" id="password" class="noRadiusBorder"  required>
-                <i class="fa-solid fa-eye-slash" id="iconPassword" onclick="close()"></i>
+            <div class="divInput">
+              <div id="divRequired">
+                  <i class="fa-solid fa-key"></i>
+                  <input type="password" placeholder="Senha" id="password" class="noRadiusBorder required required"  required>
+                  <i class="fa-solid fa-eye-slash" id="iconPassword" onclick="close()"></i>
+              </div>
+              <span class="span-required">Deve conter mais que 8 caracteres.</span>
             </div>
-            <div>
-                <i class="fa-solid fa-key RadiusBorderDown"></i>
-                <input type="password" placeholder="Confirme a Senha" id="confirmPassword" class="inputPassword"  required>
-                <i class="fa-solid fa-eye-slash fa-solid-border" id="iconConfirmPassword" onclick="close()"></i>
+
+            <div class="divInput">
+              <div id="divRequired">
+                  <i class="fa-solid fa-key RadiusBorderDown"></i>
+                  <input type="password" placeholder="Confirme a Senha" id="confirmPassword" class="inputPassword required"  required>
+                  <i class="fa-solid fa-eye-slash fa-solid-border" id="iconConfirmPassword" onclick="close()"></i>
+              </div>
+              <span class="span-required">As senhas não são iguais.</span>
             </div>
           <button type="submit" id="buttonRegister" >Cadastrar</button>
           <!-- mudar para event depois -->
@@ -60,42 +82,8 @@
   
   </div>
 
-  <script>
-    let btn = document.querySelectorAll('#iconEye')
-    
-    btn.addEventListener('click', () => {
-      // const iconEye = document.querySelector('#iconEye')
+  <script defer type="module" src="register.method.js"></script>
 
-      // // iconEye.classList.add('fa-eye')
-      const inputSenha = document.querySelector('#password')
-
-      if (inputSenha.getAttribute('type') == 'password')
-        inputSenha.setAttribute('type', 'text')
-        else
-        inputSenha.setAttribute('type', 'password')
-
-
-      // for ( btn = 0; btn < btn.length; btn++) {
-      //   if (inputSenha.getAttribute('type') == 'password'){
-        
-      //   btn[i].setAttribute('class', 'fa-solid fa-eye')
-      //   } else{
-      //   btn[i].setAttribute('class', 'fa-solid fa-eye-slash')
-      //   }
-      // }
-
-
-      // if (inputSenha.getAttribute('type') == 'password'){
-        
-      // inputSenha.setAttribute('type', 'text')
-      // btn[i].setAttribute('class', 'fa-solid fa-eye')
-      // } else{
-      // inputSenha.setAttribute('type', 'password')
-      // btn[i].setAttribute('class', 'fa-solid fa-eye-slash')
-      // }
-
-      
-    })
-  </script>
+  
 </body>
 </html>
