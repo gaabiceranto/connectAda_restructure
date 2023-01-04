@@ -1,2 +1,5 @@
-# connectAda_restructure
+<<<<<<< gaybi
 --
+=======
+Partiu começar a documentar.
+>>>>>>> main
