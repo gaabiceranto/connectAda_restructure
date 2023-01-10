@@ -17,4 +17,4 @@ jobs:
           server: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_dev_user }}
           password: ${{ secrets.ftp_dev_password }}
-          server-dir: /var/www/connectada/dev/
+          server-dir: dev/
