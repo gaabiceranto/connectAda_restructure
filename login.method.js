@@ -1,4 +1,5 @@
- 
+const mysql = require('mysql2'); 
+
 function logar(event){
 
   
@@ -36,7 +37,5 @@ function logar(event){
   const buttonLogin = document.getElementById('buttonLogin')
   buttonLogin.addEventListener("click", function(event){logar(event)});
   
-  const StorageCreator = (thisUser) => {
-    window.localStorage.setItem('user',JSON.stringify(thisUser) )
-  }
+
   
