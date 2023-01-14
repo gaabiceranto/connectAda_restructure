@@ -1,12 +1,12 @@
 
 
 function logar(event){
-
+  event.preventDefault();
   const mysql = require('mysql2'); 
 
-    event.preventDefault();
+    
   
-    const login = document.getElementById("login").value;
+    const username = document.getElementById("login").value;
     const password = document.getElementById("password").value;
   
 
