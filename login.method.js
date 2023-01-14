@@ -5,63 +5,31 @@ function logar(event){
 
     event.preventDefault();
   
-    const username = document.getElementById("login").value;
+    const login = document.getElementById("login").value;
     const password = document.getElementById("password").value;
   
-    // const index = dataBase.findIndex(item => item.email === login)
-  
-  
-//     if(dataBase[index].password === password){
-//         const thisUser = dataBase[index].email;
-        
-//         alert("sucesso");
-//         StorageCreator(thisUser)
-  
-//         location.href = "../feed/feed.html";
-        
-//         return ;
-//     } else { alert('Usuário ou senha incorretos')
-//   }
 
-
-if (username && password) {
-  con.connect(function(err) {
-       if (err) throw err;
-       con.query('SELECT * FROM Utilisateur WHERE username = ? AND password = ?', [username, password],function(err, results) {
-          if (err) {
-              console.log('error running the authentication:', err);
-          }
-          results = JSON.parse("[{},{}]")
-          if (results.length > 0) {
-            alert('Não tem no DB')
-              // req.session.loggedin = true
-              // req.session.username = username
-              // res.render('home')
-          }
-       });  
-  });
-};
-
-// connection.query('SELECT * FROM adacheck', function (err, results, fields) {
-//   if (err) throw err;
-//   console.log(results);
-// });
-
-
-
-//     if(login == "gabi" && password == "123"){
-        
-//         alert("sucesso");
-//         StorageCreator(thisUser)
+    const connection = mysql.createConnection({
+      host: 'connectada.made4it.com.br',
+      user: 'ada',
+      password: '1122334455',
+      database: 'connectada'
+    });
+    
+    
+    connection.query(
+      'SELECT * FROM `adacheck` WHERE `username` = ? AND `password` = ?',
+      [username, password],
+      function(err, results) {
+        if (results.length > 0)
+          alert("Entrou")
+          else 
+          alert("erro")
+      }
+    );
+    connection.end();
   
-//         location.href = "./feed.html";
-        
-//         return ;
-//     } else { alert('Usuário ou senha incorretos')
-//   }
-  
-  
-//   };
+  };
   
   
    
