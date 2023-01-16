@@ -45,7 +45,7 @@ function logar(event){
     );
     
     connection.end();
-    }
+    })
   };
   
   
