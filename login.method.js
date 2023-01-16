@@ -4,7 +4,8 @@ const bodyparser = require('body-parser');
 var app = express();
 
 
-
+ const mysql = require('mysql2'); 
+ 
 function logar(event){
   event.preventDefault();
 
