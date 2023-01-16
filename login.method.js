@@ -1,8 +1,9 @@
 
-
+//  const mysql = require('mysql2'); 
+ 
 function logar(event){
   event.preventDefault();
-  const mysql = require('mysql2'); 
+ 
 
     
   
