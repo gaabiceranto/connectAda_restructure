@@ -1,0 +1,24 @@
+{
+  "name": "connectada_restructure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaabiceranto/connectAda_restructure.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaabiceranto/connectAda_restructure/issues"
+  },
+  "homepage": "https://github.com/gaabiceranto/connectAda_restructure#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0"
+  }
+}
