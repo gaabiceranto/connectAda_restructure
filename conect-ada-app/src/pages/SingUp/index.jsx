@@ -20,18 +20,37 @@ const App = () => {
     <main>
       <form >
       <h2>Cadastrar na Connect Ada</h2>
-      <FaUser/>
-      <Input placeholder="Nome" type="text" />
-      <FaUser/>
-      <Input placeholder="Sobrenome" type="text"  />
-      <img src={Arroba} />
-      <Input placeholder="Nome de Usuário" type="text" />
-      <MdEmail/>
-      <Input placeholder="Email" type="email"  />
-      <ImKey/>
-      <Input placeholder="Senha" type="password"  />
-      <ImKey/>
-      <Input placeholder="Confirmar Senha" type="password"  />
+
+      <div style={{borderRadius: '12px 12px 0px 0px'}} className='inputContainer '>
+        <FaUser/>
+        <Input placeholder="Nome" type="text" />
+      </div>
+
+      <div className='inputContainer '>
+        <FaUser/>
+        <Input placeholder="Sobrenome" type="text"  />
+      </div>
+
+      <div className='inputContainer'>
+        <img src={Arroba} />
+        <Input placeholder="Nome de Usuário" type="text" />
+      </div>
+
+      <div className='inputContainer'>
+        <MdEmail/>
+        <Input placeholder="Email" type="email"  />
+      </div>
+
+      <div className='inputContainer'>
+        <ImKey/>
+        <Input placeholder="Senha" type="password"  />
+      </div>
+
+      <div style={{borderRadius: '0px 0px 12px 12px'}} className='inputContainer'>
+        <ImKey/>
+        <Input placeholder="Confirmar Senha" type="password"  />
+      </div>
+
       </form>
     </main>
     </>
