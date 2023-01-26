@@ -1,0 +1,16 @@
+
+body {
+    background-image: url(../../assets/background-ada-main.svg);
+    height: 100vh;
+    font-family: 'Exo', sans-serif;
+    
+    background-origin: content-box;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #181C23;
+  }
+
+ header{
+    color:rgb(166, 247, 80)
+ }

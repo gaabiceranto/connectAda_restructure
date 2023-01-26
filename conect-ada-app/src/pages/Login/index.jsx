@@ -1,4 +1,5 @@
-import '../../App.css';
+import './style.css';
+import Logo from "../../assets/logo-ada+connect.svg";
 
 
 
@@ -6,7 +7,20 @@ import '../../App.css';
 const App = () => {
 
 
-  return <p>olá </p>
+  return (
+    <>
+    <header>
+      <img src={Logo} />
+      <p>A rede social ada by let's code.</p>
+    </header>
+    <main>
+      <form >
+      <h2>Cadastrar na Connect Ada</h2>
+      
+      </form>
+    </main>
+    </>
+  )
 
 }
 
