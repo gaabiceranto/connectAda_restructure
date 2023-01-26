@@ -1,7 +1,10 @@
 import './style.css';
 import Logo from "../../assets/logo-ada+connect.svg";
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
-
+import { FaUser } from 'react-icons/fa';
+import { ImKey } from 'react-icons/im';
 
 
 const App = () => {
@@ -15,8 +18,19 @@ const App = () => {
     </header>
     <main>
       <form >
-      <h2>Cadastrar na Connect Ada</h2>
+      <h2>Entar na Connect Ada</h2>
+
+      <div style={{borderRadius: '12px 12px 0px 0px'}} className='inputContainer first'>
+        <FaUser/>
+        <Input placeholder="Nome de Usuário" type="text" />
+      </div>
       
+      <div style={{borderRadius: '0px 0px 12px 12px'}}className='inputContainer'>
+        <ImKey/>
+        <Input placeholder="Senha" type="password"  />
+      </div>
+      <Button text="Entrar" />
+
       </form>
     </main>
     </>

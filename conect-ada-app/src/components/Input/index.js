@@ -1,10 +1,10 @@
 import { PropTypes } from "prop-types";
 
-const Input = ({label, hideContent, aoMudar, cor}) => {
+
+const Input = ({type, aoMudar, placeholder, value,  required}) => {
     return (
         <div className="inputForm">
-            <label style={{color:cor}}   >{label}</label> 
-            <input type={hideContent ? "password" : "text"}  name="input" onChange={aoMudar}  />
+            <input type={type} placeholder={placeholder} value={value} onChange={aoMudar} required={required ? "required" : ""} />
         </div>
     )
 }
