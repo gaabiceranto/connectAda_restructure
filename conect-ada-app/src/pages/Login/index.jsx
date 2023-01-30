@@ -30,6 +30,7 @@ const App = () => {
         <Input placeholder="Senha" type="password"  />
       </div>
       <Button text="Entrar" />
+      <p>Nãp possui uma conta? <a href="/singup" >Cadastre-se!</a></p>
 
       </form>
     </main>

@@ -59,11 +59,25 @@ form h2 {
     font-family: Exo, sans-serif;
     font-weight: 700;
     color: rgb(24, 28, 35);
+    cursor: pointer !important;
    
     border-radius: 12px;
     height: 40px;
     width: 180px;
     margin: 5px auto;
  }
+
+form p {
+   font-weight: 400;
+   font-size: 10px;
+   color:white;
+   margin-top: 0px;
+}
+
+a{
+   all: unset;
+   color:rgb(166, 247, 80);
+   cursor: pointer;
+}
 
  
