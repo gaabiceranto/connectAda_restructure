@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/connectAda_restructure/static/css/main.0092f667.css",
-    "main.js": "/connectAda_restructure/static/js/main.e51224e7.js",
-    "static/js/787.d4a89da0.chunk.js": "/connectAda_restructure/static/js/787.d4a89da0.chunk.js",
-    "static/media/background-ada-main.svg": "/connectAda_restructure/static/media/background-ada-main.43fe57eea50ae902bd1b.svg",
-    "static/media/logo-ada+connect.svg": "/connectAda_restructure/static/media/logo-ada+connect.a2b97bb172d23b4b9c66ce9d105040bf.svg",
-    "static/media/logo.svg": "/connectAda_restructure/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/icon-arroba.svg": "/connectAda_restructure/static/media/icon-arroba.7e6007fa4c09e1d2ae505bf7af58f04f.svg",
-    "index.html": "/connectAda_restructure/index.html",
-    "main.0092f667.css.map": "/connectAda_restructure/static/css/main.0092f667.css.map",
-    "main.e51224e7.js.map": "/connectAda_restructure/static/js/main.e51224e7.js.map",
-    "787.d4a89da0.chunk.js.map": "/connectAda_restructure/static/js/787.d4a89da0.chunk.js.map"
+    "main.css": "./static/css/main.3bda8151.css",
+    "main.js": "./static/js/main.8a5de64a.js",
+    "static/js/787.d4a89da0.chunk.js": "./static/js/787.d4a89da0.chunk.js",
+    "static/media/background-ada-main.svg": "./static/media/background-ada-main.43fe57eea50ae902bd1b.svg",
+    "static/media/logo-ada+connect.svg": "./static/media/logo-ada+connect.a2b97bb172d23b4b9c66ce9d105040bf.svg",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/icon-arroba.svg": "./static/media/icon-arroba.7e6007fa4c09e1d2ae505bf7af58f04f.svg",
+    "index.html": "./index.html",
+    "main.3bda8151.css.map": "./static/css/main.3bda8151.css.map",
+    "main.8a5de64a.js.map": "./static/js/main.8a5de64a.js.map",
+    "787.d4a89da0.chunk.js.map": "./static/js/787.d4a89da0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0092f667.css",
-    "static/js/main.e51224e7.js"
+    "static/css/main.3bda8151.css",
+    "static/js/main.8a5de64a.js"
   ]
 }
