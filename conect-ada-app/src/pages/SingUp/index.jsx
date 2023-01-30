@@ -2,6 +2,7 @@ import './style.css';
 import Logo from "../../assets/logo-ada+connect.svg";
 import Input from '../../components/Input';
 import Arroba from "../../assets/icon-arroba.svg"
+import Button from '../../components/Button';
 
 import { FaUser } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
@@ -50,6 +51,9 @@ const App = () => {
         <ImKey/>
         <Input placeholder="Confirmar Senha" type="password"  />
       </div>
+
+      <Button text="Entrar" />
+      <p>Já possui uma conta? <a href="/" >Entrar</a></p>
 
       </form>
     </main>
